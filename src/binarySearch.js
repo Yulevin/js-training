@@ -1,10 +1,10 @@
 function linearSearch(arr, el) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === el) {
-      return console.log(i);
+      return i;
     }
   }
-  return console.log('There is no element ' + el + ' in array');
+  return ('There is no element ' + el + ' in array');
 }
 
 function binarySearch(arr, el) {
@@ -15,7 +15,7 @@ function binarySearch(arr, el) {
     let mid = Math.floor((left + right) / 2);
 
     if (arr[mid] === el){
-      return console.log(mid);
+      return mid;
     }
     if (arr[mid] > el) {
       right = mid;
@@ -23,22 +23,22 @@ function binarySearch(arr, el) {
       left = mid;
     }
   }
-  return console.log('There is no element ' + el + ' in array');
+  return ('There is no element ' + el + ' in array');
 }
 
 function countFreq(arr, el) {
   
   let elPos = binarySearch(arr, el);
 
-  if (elPos === -1) return console.log(0);
-  debugger
+  if (elPos === -1) return 0;
+  
   let i = elPos;
   while (arr[i] === el) i--;
   
   let j = elPos;
   while (arr[j] === el) j++;
 
-  return console.log(j - i - 1);
+  return j - i - 1;
 }
 
 export {linearSearch, binarySearch, countFreq};
