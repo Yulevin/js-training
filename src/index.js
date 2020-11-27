@@ -1,5 +1,6 @@
 import {linearSearch, binarySearch, countFreq} from './binarySearch.js';
-import {fact, fact2, fact3, countWays} from './recursion.js'
+import {fact, fact2, fact3, countWays, countWaysCache, hit, miss} from './recursion.js';
+import {dict} from './HashTable.js';
 
 const el = 3;
 const arr = [1, 2, 3, 3, 3, 4, 5, 6, 7, 8];
@@ -12,3 +13,5 @@ console.log('factorial #1: ', fact(n));
 console.log('factorial #2: ', fact2(5, 4))
 console.log('factorial #3: ', fact3(4, 5));
 console.log('Count ways: ', countWays(5));
+console.log('Count ways cache:', countWaysCache(12), 'hit =', hit, 'miss =', miss);
+console.log('Get ab hash: ', dict.get('ab'), 'Get ba hash: ', dict.get('ba'));
