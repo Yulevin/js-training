@@ -1,6 +1,7 @@
 import {linearSearch, binarySearch, countFreq} from './binarySearch.js';
 import {fact, fact2, fact3, countWays, countWaysCache, hit, miss} from './recursion.js';
 import {dict} from './HashTable.js';
+import {walk} from './treeTraversal.js';
 
 const el = 3;
 const arr = [1, 2, 3, 3, 3, 4, 5, 6, 7, 8];
@@ -15,3 +16,13 @@ console.log('factorial #3: ', fact3(4, 5));
 console.log('Count ways: ', countWays(5));
 console.log('Count ways cache:', countWaysCache(12), 'hit =', hit, 'miss =', miss);
 console.log('Get ab hash: ', dict.get('ab'), 'Get ba hash: ', dict.get('ba'));
+
+document.body.addEventListener('click', (e) => {
+  if (e.target.type == 'checkbox') {
+    const checked = e.target.checked;
+
+    walk(e.target, (child) => {
+      child.checked = checked;
+    })
+  }
+});
