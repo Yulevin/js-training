@@ -1,2 +1,25 @@
 .DS_Store
 .vscode
+/js-algo-makewebme/src/8_graphsOnReact/.DS_Store
+
+# dependencies
+/node_modules
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/.pnp
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/pnp.js
+
+# testing
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/coverage
+
+# production
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/build
+
+# misc
+.DS_Store
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/.env.local
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/.env.development.local
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/.env.test.local
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/.env.production.local
+
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/npm-debug.log*
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/yarn-debug.log*
+/js-algo-makewebme/src/8_graphsOnReact/minesweeper/yarn-error.log*

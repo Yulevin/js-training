@@ -7,7 +7,7 @@ function foo() {
 try {
   foo();
 } catch(e) {
-  console.log(counter, e.message);
+  console.log('Resursion stack counter: ', counter, e.message);
 }
 
 // O(n) time

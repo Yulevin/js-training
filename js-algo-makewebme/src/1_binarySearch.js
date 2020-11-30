@@ -27,9 +27,7 @@ function binarySearch(arr, el) {
 }
 
 function countFreq(arr, el) {
-  
   let elPos = binarySearch(arr, el);
-
   if (elPos === -1) return 0;
   
   let i = elPos;
