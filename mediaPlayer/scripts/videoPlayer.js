@@ -55,9 +55,6 @@ export const videoPlayerInit = () => {
         const currentTime = videoPlayer.currentTime;
         const duration = videoPlayer.duration;
 
-        // Нативный тип "range" у тега "input",
-        // у которого меняем поле "value" для
-        // управление прогрессом
         videoProgress.value = (currentTime / duration) * 100;
 
         // Конвертируем текущее время в минуты
@@ -74,9 +71,7 @@ export const videoPlayerInit = () => {
     });
 
     videoProgress.addEventListener('change', () => {
-        // Выясняем продолжительность
         const duration = videoPlayer.duration;
-        // Забираем поле "value"
         const value = videoProgress.value;
         // Переключаем ползунок прогресса
         videoPlayer.currentTime = (value * duration) / 100;
